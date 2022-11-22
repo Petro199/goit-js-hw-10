@@ -58,6 +58,7 @@ function renderCountries(countries) {
     countryList.innerHTML = '';
   }
 }
+countryList.style.cssText = 'list-style: none'
 
 
 
