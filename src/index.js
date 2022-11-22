@@ -9,9 +9,9 @@ const inputEL = document.querySelector('#search-box');
 const countryList = document.querySelector('.country-list');
 const countryInfo = document.querySelector('.country-info');
 
-inputEL.addEventListener('input', debounce(handleInput, DEBOUNCE_DELAY));
+inputEL.addEventListener('input', debounce(inputChange, DEBOUNCE_DELAY));
 
-function handleInput() {
+function inputChange() {
     if (inputEL.value.trim().length > 0) {
     //    console.log(inputEL.value.trim()); 
     //     console.log(inputEL.value.trim().length);
