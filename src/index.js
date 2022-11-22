@@ -13,8 +13,8 @@ inputEL.addEventListener('input', debounce(handleInput, DEBOUNCE_DELAY));
 
 function handleInput() {
     if (inputEL.value.trim().length > 0) {
-       console.log(inputEL.value.trim()); 
-        console.log(inputEL.value.trim().length);
+    //    console.log(inputEL.value.trim()); 
+    //     console.log(inputEL.value.trim().length);
         
     fetchCountries(inputEL.value.trim()).then(data =>
      
@@ -28,7 +28,7 @@ function handleInput() {
 }
 
 function renderCountries(countries) {
-    console.log(countries);
+    // console.log(countries);
   let variable;
   if (countries.length > 10) {
     Notiflix.Notify.info(
